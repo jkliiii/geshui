@@ -1,0 +1,6 @@
+package androidx.core.widget;
+
+/* compiled from: R8$$SyntheticClass */
+/* loaded from: E:\78999\cookie_5123796.dex */
+public final /* synthetic */ class r {
+}
