@@ -1,0 +1,52 @@
+package me.zhanghai.android.materialprogressbar;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+
+/* loaded from: E:\78999\cookie_5123796.dex */
+public class CircularProgressDrawable extends BaseProgressLayerDrawable<SingleCircularProgressDrawable, CircularProgressBackgroundDrawable> {
+    public CircularProgressDrawable(int i5, Context context) {
+        super(new Drawable[]{new CircularProgressBackgroundDrawable(), new SingleCircularProgressDrawable(i5), new SingleCircularProgressDrawable(i5)}, context);
+    }
+
+    @Override // me.zhanghai.android.materialprogressbar.BaseProgressLayerDrawable, me.zhanghai.android.materialprogressbar.ShowBackgroundDrawable
+    public /* bridge */ /* synthetic */ boolean getShowBackground() {
+        return super.getShowBackground();
+    }
+
+    @Override // me.zhanghai.android.materialprogressbar.BaseProgressLayerDrawable, me.zhanghai.android.materialprogressbar.IntrinsicPaddingDrawable
+    public /* bridge */ /* synthetic */ boolean getUseIntrinsicPadding() {
+        return super.getUseIntrinsicPadding();
+    }
+
+    @Override // me.zhanghai.android.materialprogressbar.BaseProgressLayerDrawable, me.zhanghai.android.materialprogressbar.ShowBackgroundDrawable
+    public /* bridge */ /* synthetic */ void setShowBackground(boolean z5) {
+        super.setShowBackground(z5);
+    }
+
+    @Override // me.zhanghai.android.materialprogressbar.BaseProgressLayerDrawable, android.graphics.drawable.Drawable, me.zhanghai.android.materialprogressbar.TintableDrawable
+    @SuppressLint({"NewApi"})
+    public /* bridge */ /* synthetic */ void setTint(int i5) {
+        super.setTint(i5);
+    }
+
+    @Override // me.zhanghai.android.materialprogressbar.BaseProgressLayerDrawable, android.graphics.drawable.LayerDrawable, android.graphics.drawable.Drawable, me.zhanghai.android.materialprogressbar.TintableDrawable
+    @SuppressLint({"NewApi"})
+    public /* bridge */ /* synthetic */ void setTintList(ColorStateList colorStateList) {
+        super.setTintList(colorStateList);
+    }
+
+    @Override // me.zhanghai.android.materialprogressbar.BaseProgressLayerDrawable, android.graphics.drawable.Drawable, me.zhanghai.android.materialprogressbar.TintableDrawable
+    @SuppressLint({"NewApi"})
+    public /* bridge */ /* synthetic */ void setTintMode(PorterDuff.Mode mode) {
+        super.setTintMode(mode);
+    }
+
+    @Override // me.zhanghai.android.materialprogressbar.BaseProgressLayerDrawable, me.zhanghai.android.materialprogressbar.IntrinsicPaddingDrawable
+    public /* bridge */ /* synthetic */ void setUseIntrinsicPadding(boolean z5) {
+        super.setUseIntrinsicPadding(z5);
+    }
+}

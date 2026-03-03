@@ -1,0 +1,41 @@
+package com.google.android.material.internal;
+
+import android.content.Context;
+import android.graphics.Point;
+import android.graphics.Rect;
+import android.os.Build;
+import android.view.Display;
+import android.view.WindowManager;
+
+/* loaded from: E:\78999\cookie_5123796.dex */
+public class WindowUtils {
+    private static final String TAG = "WindowUtils";
+
+    private static class a {
+        /* renamed from: ʻ, reason: contains not printable characters */
+        static Rect m6942(WindowManager windowManager) {
+            Display defaultDisplay = windowManager.getDefaultDisplay();
+            Point point = new Point();
+            defaultDisplay.getRealSize(point);
+            Rect rect = new Rect();
+            rect.right = point.x;
+            rect.bottom = point.y;
+            return rect;
+        }
+    }
+
+    private static class b {
+        /* renamed from: ʻ, reason: contains not printable characters */
+        static Rect m6943(WindowManager windowManager) {
+            return windowManager.getCurrentWindowMetrics().getBounds();
+        }
+    }
+
+    private WindowUtils() {
+    }
+
+    public static Rect getCurrentWindowBounds(Context context) {
+        WindowManager windowManager = (WindowManager) context.getSystemService("window");
+        return Build.VERSION.SDK_INT >= 30 ? b.m6943(windowManager) : a.m6942(windowManager);
+    }
+}
